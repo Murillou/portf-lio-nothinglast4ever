@@ -1,0 +1,39 @@
+main {
+  color: #b13434;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.star {
+  margin-top: 3rem;
+  width: 300px;
+  height: 300px;
+  background-color: #b13434;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.title {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  font-size: 1rem;
+}
