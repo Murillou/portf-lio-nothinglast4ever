@@ -5,9 +5,9 @@ import abooutMeImg from '../../assets/ABOUT-BOTAO.png';
 import contactImg from '../../assets/CONTACT-BOTAO.png';
 
 import { useState } from 'react';
-import styles from './Home.module.css';
+import styles from './Header.module.css';
 
-export function Home() {
+export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
