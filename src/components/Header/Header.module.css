@@ -7,6 +7,7 @@
 
 .nav {
   position: relative;
+  z-index: 10;
 }
 
 .hamburgerMenu {
@@ -26,14 +27,25 @@
 }
 
 .menu {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: transparent;
-  text-align: center;
-  list-style-type: none;
-  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+.menu.openMenu {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .menu li {
@@ -69,6 +81,10 @@
   animation-delay: 0.5s;
 }
 
+.menu.openMenu li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -102,18 +118,24 @@
   border-bottom: none;
 }
 
-.bar.open:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-
-.bar.open:nth-child(2) {
-  opacity: 0;
-}
-
-.bar.open:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-.imgMenu {
+.imgPosterArt,
+.imgMerchDesign,
+.imgAlbumArtwork {
   width: 12rem;
+}
+
+.imgContact,
+.imgAbout {
+  width: 14rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
 }

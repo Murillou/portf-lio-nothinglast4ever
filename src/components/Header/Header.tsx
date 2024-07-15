@@ -14,6 +14,10 @@ export function Header() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -27,20 +31,35 @@ export function Header() {
             isOpen ? styles.openMenu : styles.closeMenu
           }`}
         >
+          <button className={styles.closeButton} onClick={closeMenu}>
+            &times;
+          </button>
           <li>
-            <img src={posterArtImg} alt="" className={styles.imgMenu} />
+            <img
+              src={posterArtImg}
+              alt="Poster Art"
+              className={styles.imgPosterArt}
+            />
           </li>
           <li>
-            <img src={merchDesignImg} alt="" className={styles.imgMenu} />
+            <img
+              src={merchDesignImg}
+              alt="Merch Design"
+              className={styles.imgMerchDesign}
+            />
           </li>
           <li>
-            <img src={albumArtworkImg} alt="" className={styles.imgMenu} />
+            <img
+              src={albumArtworkImg}
+              alt="Album Artwork"
+              className={styles.imgAlbumArtwork}
+            />
           </li>
           <li>
-            <img src={abooutMeImg} alt="" className={styles.imgMenu} />
+            <img src={abooutMeImg} alt="About Me" className={styles.imgAbout} />
           </li>
           <li>
-            <img src={contactImg} alt="" className={styles.imgMenu} />
+            <img src={contactImg} alt="Contact" className={styles.imgContact} />
           </li>
         </ul>
       </nav>
