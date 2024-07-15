@@ -173,3 +173,100 @@
   font-size: 2rem;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .menu.openMenu li {
+    animation: none;
+  }
+
+  .menu.closeMenu li {
+    animation: none;
+  }
+
+  .menu.openMenu li:nth-child(1) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu.openMenu li:nth-child(2) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu.openMenu li:nth-child(3) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu.openMenu li:nth-child(4) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu.openMenu li:nth-child(5) {
+    opacity: 1;
+    transform: none;
+  }
+
+  .menu.openMenu li:nth-child(6) {
+    opacity: 1;
+    transform: none;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .menu li {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .menu li:nth-child(1) {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+
+  .menu li:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+
+  .menu li:nth-child(3) {
+    position: absolute;
+    top: 70%;
+    right: 10%;
+  }
+
+  .menu li:nth-child(4) {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+  }
+
+  .menu li:nth-child(5) {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  .closeButton {
+    display: none;
+  }
+}
