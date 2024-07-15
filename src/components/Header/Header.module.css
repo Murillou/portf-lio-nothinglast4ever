@@ -143,14 +143,18 @@
 }
 
 .modalContent {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  padding: 4rem 4rem;
+  width: 50vw;
+  height: 50vh;
   position: relative;
+  text-align: center;
 }
 
 .modalCloseButton {
   position: absolute;
+  color: #fff;
   top: 10px;
   right: 10px;
   background: transparent;

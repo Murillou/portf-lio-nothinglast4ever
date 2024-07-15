@@ -86,7 +86,6 @@ export function Header() {
           &times;
         </button>
         <h2>POSTER ART</h2>
-        <p>Lorem Impsum</p>
       </Modal>
 
       <Modal
@@ -99,7 +98,6 @@ export function Header() {
           &times;
         </button>
         <h2>MERCH DESIGN</h2>
-        <p>Lorem Impsum</p>
       </Modal>
 
       <Modal
@@ -112,7 +110,6 @@ export function Header() {
           &times;
         </button>
         <h2>ALBUM ARTWORK</h2>
-        <p>Lorem Impsum</p>
       </Modal>
 
       <Modal
